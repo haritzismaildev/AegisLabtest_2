@@ -88,4 +88,4 @@ Export PDF	http://localhost:5000/Data/ExportPdf
 💡 Tombol untuk ekspor tersedia di halaman utama (Index.cshtml).
 
 📌 Kontributor & Lisensi
-👨‍💻 Dikembangkan oleh: Haritz 📜 Lisensi: MIT
+👨‍💻 Dikembangkan oleh: Haritz 📜 Lisensi: null
