@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Export PDF Task 2</title>
+    <style>
+        /* Tambahkan styling sesuai kebutuhan */
+        body { font-family: Arial, sans-serif; }
+        h1 { color: #333; }
+        table { border-collapse: collapse; width: 100%; }
+        table, th, td { border: 1px solid #ccc; }
+        th, td { padding: 8px; text-align: left; }
+        .export-buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .export-buttons a {
+         padding: 10px 15px;
+         margin: 5px;
+         display: inline-block;
+         border-radius: 5px;
+         text-decoration: none;
+         }
+    </style>
+</head>
+<body>
+    <h1>Data Export PDF Task ke 2</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nama</th>
+            <th>Tanggal</th>
+        </tr>
+        @foreach (var data in Model)
+        {
+            <tr>
+                <td>@data.Id</td>
+                <td>@data.Nama</td>
+                <td>@data.Tanggal.ToString("dd-MM-yyyy")</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
